@@ -1,0 +1,371 @@
+.frontpage {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.nav {
+  width: 100%;
+  height: 80px;
+  background-color: #5e5eb9;
+}
+.nav .right {
+  width: 80%;
+  height: 100%;
+  float: right;
+  position: relative;
+}
+.nav .left {
+  width: 20%;
+  height: 100%;
+  float: left;
+}
+.right button {
+  float: right;
+  width: 70px;
+  height: 80px;
+  font-size: 25px;
+  margin-left: 5px;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.card {
+  width: 200px;
+  height: 250px;
+  border: 1px solid black;
+  right: 10px;
+  top: 80px;
+  position: absolute;
+  text-align: center;
+}
+.main {
+  /* background-image: url(../assets/images/bg.jpg); */
+  width: 100%;
+  height: calc(100vh - 80px);
+  display: flex;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center;
+}
+/* chat */
+.main .right {
+  width: 40%;
+  height: 100%;
+  float: right;
+  border: 1px solid black;
+  border-radius: 20px;
+}
+/* post */
+.main .left {
+  width: 60%;
+  height: 100%;
+  float: left;
+  display: flex;
+  justify-content: flex-end;
+  padding: 30px;
+}
+
+.post {
+  width: 100%;
+  padding: 29px;
+  height: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.posts {
+  margin: 100px;
+  border-radius: 10px;
+  width: 600px;
+  height: 700px;
+  overflow: scroll;
+  background-color: white;
+  box-shadow: 1px 1px 50px 5px rgb(196, 190, 190);
+}
+.posts::-webkit-scrollbar {
+  width: 0%;
+}
+/* item */
+
+.item {
+  width: 100%;
+  height: 100%;
+}
+.item .top {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  gap: 20px;
+  box-sizing: border-box;
+}
+
+.top .img {
+  width: 50px;
+  height: 50px;
+  margin: 5px 15px;
+  border: 1px solid black;
+  border-radius: 100%;
+}
+.top h5 {
+  font-size: 15px;
+}
+.item .middle {
+  width: 100%;
+  height: 75%;
+}
+.item .bottom {
+  width: 100%;
+  height: 15%;
+}
+
+.item .bottom button {
+  width: 50px;
+  height: 50px;
+  font-size: 25px;
+  margin: 10px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+/* chats */
+
+.chat {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+box-shadow: 1px 1px 10px 5px lightgray;
+  background-color: white;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.chat .top {
+  width: 100%;
+  height: 100px;
+  box-sizing: border-box;
+  display: flex;
+  gap: 20px;
+  overflow-x: scroll;
+  border-bottom: 1px solid black;
+}
+.chat .top::-webkit-scrollbar {
+  width: 0%;
+}
+.user {
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  padding: 5px;
+  border: 1px solid black;
+  flex-wrap: nowrap;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.user img {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+}
+.chat .bottom {
+  width: 100%;
+  height: calc(100vh - 100px);
+}
+.chat .bottom .messages {
+  width: 100%;
+  height: 80%;
+  overflow-y: scroll;
+}
+.messages::-webkit-scrollbar {
+  width: 1px;
+}
+.chat .bottom .inputs {
+  width: 100%;
+  height: 20%;
+  margin-top: -20px;
+  display: flex;
+}
+.inputs input {
+  width: 80%;
+  height: 60px;
+  border: 1px solid black;
+  font-size: 25px;
+}
+.inputs button {
+  width: 20%;
+  height: 50px;
+  background-color: aliceblue;
+  border: 1px solid black;
+  margin: 5px;
+  background-color: #5e5eb9;
+  color: white;
+}
+/* card */
+.cards {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  top: 80px;
+  border: 1px solid black;
+  background-color: white;
+  right: 20px;
+}
+.cards::-webkit-scrollbar {
+  width: 0%;
+}
+/* mmesaages  */
+
+.message1 {
+  margin-top: 10px;
+  width: 100%;
+  float: right;
+  font-size: 17px;
+}
+/* my message feild */
+.message1 .m1 {
+  float: right;
+  display: flex;
+  overflow: hidden;
+  word-break: break-all;
+}
+.m1 img {
+  float: right;
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+  border-radius: 100%;
+  margin-top: 50px;
+}
+
+.m1 p {
+  width: 300px;
+  box-sizing: border-box;
+  background-color: #f1f1fc;
+  padding: 20px;
+  border-radius: 10px;
+}
+/* other message feild */
+.message2 {
+  margin-top: 10px;
+  width: 100%;
+  float: left;
+  font-size: 20px;
+  color: white;
+}
+.message2 .m2 {
+  float: left;
+  display: flex;
+  overflow: hidden;
+  word-break: break-all;
+}
+.m2 img {
+  float: left;
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+  border-radius: 100%;
+  margin-top: 50px;
+}
+.m2 p {
+  width: 300px;
+  box-sizing: border-box;
+  background-color: #999ad7;
+  padding: 20px;
+  border-radius: 10px;
+}
+.comments {
+  width: 300px;
+  height: 200px;
+  position: absolute;
+  background-color: white;
+  bottom: 50px;
+  right: 20px;
+  overflow: hidden;
+  border: 1px solid black;
+}
+
+.comments ul {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
+}
+ul::-webkit-scrollbar {
+  width: 0%;
+}
+.add-comment {
+  width: 100%;
+  height: 50px;
+  justify-content: space-around;
+}
+.add-comment input {
+  margin-left: 10px;
+  width: 200px;
+  outline: none;
+  height: 20px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+.add-comment button {
+  border: 1px solid black;
+}
+/* /notify */
+.notify {
+  width: 500px;
+  height: 600px;
+  position: absolute;
+}
+.list {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  font-size: 20px;
+  margin: 10px 20px;
+}
+.list img {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  margin-top: 10px;
+}
+.list h5 {
+  font-size: 15px;
+  padding-left: 20px;
+}
+
+/* edit */
+.edit{
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+}
+.edit input{
+  width: 200px;
+  height: 30px;
+}
+.imag{
+  width: 100px;
+  height: 100px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 100%;
+  background-color: pink;
+}
+.edit button{
+  border: 1px solid black;
+  width: 100px;
+  margin-top: 30px;
+  height: 40px;
+  font-size: 20px;
+}
+.divimg::-webkit-scrollbar{
+  width: 0%}
